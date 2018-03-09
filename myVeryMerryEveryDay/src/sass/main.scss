@@ -1,0 +1,196 @@
+/*
+* @Author: alw-AY's
+* @Email:  ysc1217@gmail.com
+* @Date:   2016-11-22 17:53:00
+* @Last Modified by:   alw-AY's
+* @Last Modified time: 2018-03-08 14:41:21
+*/
+@import '../../node_modules/sass-mediaqueries/media-queries','videoplayer','loading';
+$window-width: 1242;
+
+@function size($w,$d: $window-width)
+{
+    @return $w/$d*100vw;
+}
+
+@font-face
+{
+    font-family: 'Kartika';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('../fonts/Kartika_Bold.eot');
+    src: url('../fonts/Kartika_Bold.woff') format('woff'), url('../fonts/Kartika_Bold.ttf') format('truetype'), url('../fonts/Kartika_Bold.svg#Kartika_Bold') format('svg'), url('../fonts/Kartika_Bold.eot?#iefix') format('embedded-opentype');
+}
+@font-face
+{
+    font-family: 'Senhow Icon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Senhow_Icon.eot?fncbbl');
+    src: url('../fonts/Senhow_Icon.eot?fncbbl#iefix') format('embedded-opentype'), url('../fonts/Senhow_Icon.ttf?fncbbl') format('truetype'), url('../fonts/Senhow_Icon.woff?fncbbl') format('woff'), url('../fonts/Senhow_Icon.svg?fncbbl#Senhow_Icon') format('svg');
+}
+
+[class^='icon-'],
+[class*=' icon-']
+{
+    font-family: 'Senhow Icon' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+// --- xs -----------------------------------------------------------------
+@mixin xs($orientation: false)
+{
+    $max: 767px;
+    @include mq($media-type: 'all', $max-width: $max)
+    {
+        @content;
+    }
+}
+// --- sm -----------------------------------------------------------------
+@mixin sm($orientation: false)
+{
+    $min: 768px;
+    $max: 991px;
+    @include mq($media-type: 'all', $min-width: $min, $max-width: $max)
+    {
+        @content;
+    }
+}
+// --- md -----------------------------------------------------------------
+@mixin md($orientation: false)
+{
+    $min: 992px;
+    $max: 1199px;
+    @include mq($media-type: 'all', $min-width: $min, $max-width: $max)
+    {
+        @content;
+    }
+}
+// --- lg -----------------------------------------------------------------
+@mixin lg($orientation: false)
+{
+    $min: 1400px;
+    @include mq($media-type: 'all', $min-width: $min)
+    {
+        @content;
+    }
+}
+// --- xl -----------------------------------------------------------------
+@mixin xl($orientation: false)
+{
+    $min: 1600px;
+    @include mq($media-type: 'all', $min-width: $min)
+    {
+        @content;
+    }
+}
+//-------------------------------------------------------------------------
+@mixin KartikaBold
+{
+    font-family: 'Kartika',Arial, 黑体, SimHei, 宋体, SimSun, sans-serif;
+    font-weight: 700;
+}
+@mixin PorscheFranklinGothicCond
+{
+    font-family: 'Porsche Next W La',Arial, 黑体, SimHei, 宋体, SimSun, sans-serif;
+}
+@mixin PORSCHEMOTORSPORTEXTENDED
+{
+    font-family: 'Porsche Next W La',Arial, 黑体, SimHei, 宋体, SimSun, sans-serif;
+    font-weight: 700;
+}
+$white: rgb(255,255,255);
+$black: rgb(0,0,0);
+$gray: rgb(229,229,229);
+$tolopea: rgb(24,14,94);
+$nightRider: rgb(35,25,22);
+$spicyMix: rgb(165,112,101);
+$sanMarino: rgb(99,127,184);
+
+*
+{
+    line-height: 1;
+
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::after,
+::before
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',STHeiTi,sans-serif;
+    font-size: 10px;
+
+    box-sizing: border-box;
+
+    background-color: $white;
+}
+
+img,
+svg
+{
+    line-height: 0;
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+li,
+ul
+{
+    padding-left: 0;
+
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+
+    &:hover
+    {
+        color:$spicyMix;
+    }
+
+    img
+    {
+        border: none;
+        outline: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+{
+    font-weight: 400;
+}
+
+.clearfix::after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}

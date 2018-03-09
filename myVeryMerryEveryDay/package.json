@@ -1,0 +1,54 @@
+{
+  "name": "My_Very_Merry_Every_Day",
+  "version": "1.0.0",
+  "description": "My Very Merry Every Day",
+  "author": {
+    "name": "alw-AY's",
+    "email": "ysc1217@gmail.com"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {},
+  "browserify-shim": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.14",
+    "del": "^2.2.2",
+    "gsap": "^1.19.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^1.0.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-font-spider": "^0.3.6",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-removelogs": "^0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev-append": "^0.1.7",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-tinypng-compress": "^1.2.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jquery": "^3.1.1",
+    "jshint": "^2.9.4",
+    "lodash": "^4.17.4",
+    "sass-mediaqueries": "^1.6.1",
+    "spinkit": "^1.2.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
+}
